@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./html-logo.webp" />
+  </head>
+  <body>
+    <nav>
+      <!-- UL = Unordered List -->
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li>
+          <a href="#form">Formulaire</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Titre principal</h1>
+      <p>
+        Texte classique, <em>Texte italique,</em> <strong>Texte gras</strong>
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi alias
+        numquam quas saepe quos eos id provident quia veritatis a.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Ordered List</h2>
+        <ol>
+          <li>Je suis le numéro 1</li>
+          <li>2</li>
+          <li>3</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>Image en HTML</h3>
+        <img
+          src="./Capture d’écran 2024-11-29 à 18.33.41.png"
+          height="200"
+          alt="Base th17"
+        />
+      </section>
+
+      <div>
+        <h4>Tableaux</h4>
+        <table
+          border="3"
+          cellpadding="10"
+          cellspacing="10"
+          style="text-align: center"
+        >
+          <thead>
+            <tr>
+              <th>col 1</th>
+              <th>col 2</th>
+              <th>col 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Cell 1</td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td colspan="2">Cell 1</td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5><i>&#127917;</i> Les liens</h5>
+        <!-- _Blank permet d'ourir un nouvel onglet -->
+        <a href="https://htmlcheatsheet.com/" target="_blank"
+          >HTML Cheat sheet</a
+        >
+      </div>
+      <div>
+        <h6>Vidéos</h6>
+        <video
+          src="./7260-199191197_small.mp4"
+          autoplay
+          muted
+          loop
+          height="300"
+        ></video>
+      </div>
+
+      <section id="form">
+        <h2>Les formulaires</h2>
+        <form action="">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" placeholder="Entrez votre nom" /><br />
+          <label for="age">Renseigner votre age</label>
+          <input type="number" id="age" value="18" /><br />
+          <label for="gender">Genre</label>
+          <select id="gender">
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+            <option value="Autre">Autre</option></select
+          ><br />
+          <div>
+            <input type="radio" name="type" id="human" />
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="human" />
+            <label for="Extra">Extra</label>
+
+            <input type="radio" name="type" id="human" />
+            <label for="Stranger">Stranger</label>
+          </div>
+
+          <textarea placeholder="Votre message..."></textarea><br />
+
+          <input type="checkbox" name="" id="cgv" />
+          <label for="cgv">CGV</label><br />
+          <input type="submit" value="Ceci" />
+        </form>
+        <button>Envoyer 1</button>
+      </section>
+    </main>
+
+    <!-- Mail et envoie de fichier -->
+    <footer>
+      <a href="mailto:html@mail.com">Contactez-moi</a>
+      <a href="./notice.txt" download="Notice">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
